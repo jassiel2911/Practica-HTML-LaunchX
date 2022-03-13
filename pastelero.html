@@ -5,11 +5,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pastelero</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 </head>
 <body>
-    <h1>
-        Aquí se insertará el inventario de la pastelería para llevar un control
-        de los sabores y adornos disponibles.
-    </h1>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+			<div class="container">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarScroll">
+					<ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+						<li class="nav-item navbar-brand">
+							<a href="">
+								<img src="img/pastel_logo.png" alt="" width="70">
+							</a>
+						</li>
+					</ul>
+					<ul class="d-flex list-unstyled" style="--bs-scroll-height: 100px;">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+						</li>
+					</ul>
+					<ul class="d-flex list-unstyled" style="--bs-scroll-height: 100px;">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="cliente.html">Personaliza tu orden</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+    </header>
+    <main>
+        <div class="container auth-container">
+            <h1>Pedidos realizados</h1>
+            <div class="card w-100 mx-auto shadow-lg">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col"># Pedido</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Apellido</th>
+                        <th scope="col">Sabor</th>
+                        <th scope="col">Bebidas</th>
+                        <th scope="col">Adornos</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Brian</td>
+                        <td>Bautista</td>
+                        <td>Café</td>
+                        <td>Refresco</td>
+                        <td>Frutas (Fresa, mango y kiwi)</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Alicia</td>
+                        <td>Carballido</td>
+                        <td>Fresa</td>
+                        <td>Café cappuchino</td>
+                        <td>Trozos de chocolate blanco</td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer class="container bg-light p-5">
+		<h4>Contacto</h4>
+		<ul class="list-unstyled">
+			<li><a href="">Facebook</a></li>
+			<li><a href="">Twitter</a></li>
+			<li><a href="">Instagram</a></li>
+			<li><a href="">YouTube</a></li>
+		</ul>
+	</footer>
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>
+

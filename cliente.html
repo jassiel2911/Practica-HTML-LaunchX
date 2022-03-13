@@ -1,15 +1,138 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selecciona tus sabores.</title>
-</head>
-<body>
-    <h1>
-        Aquí estará el formulario en donde el cliente hará su pastel
-        personalizado.
-    </h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crea tu propio pastel.</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+			<div class="container">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarScroll">
+					<ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+						<li class="nav-item navbar-brand">
+							<a href="">
+								<img src="img/pastel_logo.png" alt="" width="70">
+							</a>
+						</li>
+					</ul>
+					<ul class="d-flex list-unstyled" style="--bs-scroll-height: 100px;">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+						</li>
+					</ul>
+					<ul class="d-flex list-unstyled" style="--bs-scroll-height: 100px;">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="pastelero.html">Vista de pastelero</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+    </header>
+    <main>
+    <div class="container auth-container">
+        <h1>Datos personales</h1>
+        <div class="card w-50 mx-auto shadow-lg">
+          <form class="row g-3">
+            <div class="col-md-12">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" />
+            </div>
+            <div class="col-md-12">
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="apellido" />
+            </div>
+            <div class="col-md-12">
+                <label for="tel1" class="form-label">Número de teléfono</label><br>
+                <input type="tel" class="form-control" id="tel1" name="tel1" maxlength="10">
+            </div>
+            <div class="col-md-12">
+              <label for="calle" class="form-label">Calle</label>
+              <input type="text" class="form-control" id="calle" />
+            </div>
+            <div class="col-md-12">
+                <label for="calle" class="form-label">Colonia</label>
+                <input type="text" class="form-control" id="calle" />
+            </div>
+            
+           
+            <div class="col-12">
+              <button type="submit" class="btn btn-negro">Guardar</button>
+            </div>
+          </form>
+        </div>
+        <br>
+        <h1>Elabora tu pastel</h1>
+        <div class="card w-50 mx-auto shadow-lg">
+          <form class="row g-3">
+            <div class="col-md-12">
+                <h2>Elije el sabor</h2>
+                <label for="sabor">Elige tu sabor favorito</label><br>
+                <input list="sabor">
+                <datalist id="sabor">
+                    <option value="Café">
+                    <option value="Fresa">
+                    <option value="Chocolate">
+                    <option value="Vainilla">
+                    <option value="Coco">
+                    <option value="Pastel imposible">
+                </datalist>
+            </div>
+            <div class="col-md-12">
+                <h2>Elije tu bebida compañante</h2><br>
+                <input type="radio" id="cafe" name="bebidas" value="Cafe">
+                <label for="cafe">Café cappuchino</label><br>
+                <input type="radio" id="te" name="bebidas" value="Te">
+                <label for="te">Té</label><br>
+                <input type="radio" id="refresco" name="bebidas" value="Refresco">
+                <label for="refresco">Refresco</label><br><br>
+            </div>
+            <div class="col-md-12">
+                <h2>Elige tus adornos</h2><br>
+                <input type="checkbox" id="topping1" name="topping1" value="Frutas">
+                <label for="topping1">Frutas (Fresas, mango y kiwi)</label><br>
+                <input type="checkbox" id="topping2" name="topping2" value="Chocolate">
+                <label for="topping2">Trozos de chocolate blanco</label><br>
+                <input type="checkbox" id="topping3" name="topping3" value="Texto">
+                <label for="topping3">Dedicatoria</label><br>
+                <input type="checkbox" id="topping4" name="topping4" value="Velas">
+                <label for="topping4">Velas</label><br>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-negro">Guardar</button>
+            </div>
+          </form>
+        </div>
+    </div>
+    <br>
+    </main>
+    <footer class="container bg-light p-5">
+		<h4>Contacto</h4>
+		<ul class="list-unstyled">
+			<li><a href="">Facebook</a></li>
+			<li><a href="">Twitter</a></li>
+			<li><a href="">Instagram</a></li>
+			<li><a href="">YouTube</a></li>
+		</ul>
+	</footer>
+    <script src="js/bootstrap.js"></script>
+  </body>
 </html>
